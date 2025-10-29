@@ -12,6 +12,7 @@
 
 <body>
     <section class="main-container">
+        <img src="./assets/logo.png" alt="Logo Ricardo Batista"  class="logo">
         <div class="main-wrapper">
             <div class="main-content">
                 <div class="main-title">
@@ -299,17 +300,16 @@
     <footer class="footer-container">
         <div class="footer-info">
             <p>Avenida Senador Vergueiro, 2123 - cj 407 - Centro - SBC CEP 09750-001</p>
-            <a href="#" target="_blank">WhatsApp: </a>
+            <a href="https://wa.me/5511982295255" target="_blank">WhatsApp: 11 98229-5255</a>
         </div>
         <div class="footer-map">
-            <iframe class="map-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.944366021025!2d-46.55910122378488!3d-23.677947465887474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43ab64c087af%3A0x26c5cdaa758f76bd!2sAv.%20Senador%20Vergueiro%2C%202123%20-%20sala%20407%20-%20Rudge%20Ramos%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-001!5e0!3m2!1spt-PT!2sbr!4v1759455910962!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.944366021025!2d-46.55910122378488!3d-23.677947465887474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43ab64c087af%3A0x26c5cdaa758f76bd!2sAv.%20Senador%20Vergueiro%2C%202123%20-%20sala%20407%20-%20Rudge%20Ramos%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-001!5e0!3m2!1spt-PT!2sbr!4v1759455910962!5m2!1spt-PT!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
 
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             autoplay: {
@@ -325,22 +325,16 @@
                     spaceBetween: 20,
                 }
             },
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
-
-        // Perguntas
         $(".pergunta").click(function () {
 
-            // Se está fechado
             if (!$(this).parent().hasClass("aberto")) {
 
                 $(this).parent().addClass("aberto");
@@ -356,7 +350,6 @@
                 $(this).children("i").addClass("bi-plus-lg");
 
             }
-
         });
 
     </script>
