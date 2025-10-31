@@ -21,22 +21,19 @@ body {
     background-color: black;
 }
 
-.logo {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-    align-self: flex-start;
-    max-width: 20%;
-    min-width: 150px;
-    width: auto;
-}
-
-
 .main-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 3em;
+    align-self: flex-start;
+}
+
+.logo {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
     align-self: flex-start;
 }
 
@@ -130,6 +127,11 @@ body {
     padding: 4em 1em;
 }
 
+.steps-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .steps-title h3 {
     color: #fff;
     font-size: 2.5em;
@@ -158,10 +160,6 @@ body {
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
-.steps-text {
-    margin-top: 2em;
-}
-
 .steps-text span {
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -174,10 +172,12 @@ body {
 .steps-text h3,
 .steps-text p {
     color: #fff;
+    margin: 1em 0;
+    line-height: 1.4rem;
 }
 
 .steps-text {
-    text-align: justify;
+    text-align: left;
 }
 
 /* end of steps section */
@@ -217,6 +217,7 @@ body {
     text-align: center;
     text-align: justify;
 }
+
 /* end of about section */
 /* google-rating-section */
 .avaliacoes {
@@ -290,6 +291,7 @@ body {
 .google-icon {
     width: 40px;
 }
+
 /* end of google-rating */
 /* faq-container-section*/
 .faq-container {
@@ -396,6 +398,7 @@ details[open] .faq-summary .caret {
 .faq-content p {
     margin: 0;
 }
+
 /* end of faq-section */
 /* footer-section */
 .footer-container {
@@ -434,7 +437,7 @@ details[open] .faq-summary .caret {
     height: 300px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .map-responsive iframe {
@@ -483,10 +486,6 @@ details[open] .faq-summary .caret {
         height: auto;
     }
 
-    .number span {
-        font-size: 10em;
-    }
-
     .footer-container {
         gap: 2em;
         padding: 4rem 1rem;
@@ -499,6 +498,21 @@ details[open] .faq-summary .caret {
 }
 
 @media (max-width: 768px) {
+    .main-container {
+        padding: 2em 0.5em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
     .main-title h3 {
         font-size: 1.6em;
     }
@@ -508,6 +522,10 @@ details[open] .faq-summary .caret {
         width: 100%;
     }
 
+    .logo {
+        align-self: center;
+    }
+    
     .mission-items,
     .steps-items {
         grid-template-columns: 1fr;
@@ -519,19 +537,15 @@ details[open] .faq-summary .caret {
     }
 
     .steps-item {
-        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
     }
 
-    .steps-text span {
-        font-size: 1em;
-    }
-
-    .steps-text h3 {
-        font-size: 1.2em;
-    }
-
-    .steps-text p {
-        font-size: 0.95em;
+    .steps-title h3 {
+        font-size: 2em;
+        text-align: center;
     }
 
     .about-text h3 {
@@ -565,7 +579,7 @@ details[open] .faq-summary .caret {
     }
 
     .main-title h3 {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     .main-title p {
@@ -573,26 +587,16 @@ details[open] .faq-summary .caret {
     }
 
     .mission-title h3,
-    .steps-title h3,
     .about-title h3 {
         font-size: 1.5em;
     }
 
-    .mission-item,
-    .steps-item {
+    .mission-item {
         padding: 1em;
     }
 
-    .steps-text {
-        margin-top: 1em;
-    }
-
-    .steps-text span {
-        font-size: 0.9em;
-    }
-
     .number span {
-        font-size: 6em;
+        font-size: 20em;
     }
 
     .faq-title {
