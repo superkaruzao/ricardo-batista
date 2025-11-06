@@ -610,6 +610,10 @@ details[open] .faq-summary .caret {
 }
 
 @media (max-width: 480px) {
+    .main-container {
+        padding: 2rem 0;
+    }
+
     .mission-title h3,
     .about-title h3 {
         font-size: 1.5em;
@@ -617,6 +621,10 @@ details[open] .faq-summary .caret {
 
     .avaliacoes .wrapper {
         width: 100%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
     }
 
     .mission-item {
