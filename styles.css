@@ -13,28 +13,34 @@ body {
 }
 
 .main-container {
-    padding: 4em 2em;
+    padding: 5em 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-image: url("./assets/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 900px;
 }
 
 .main-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3em;
-    align-self: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .logo {
     flex: 1 1 250px;
     display: flex;
     justify-content: center;
-    max-width: 250px;
+    max-width: 350px;
     align-self: flex-start;
+}
+
+.main-content {
+    flex: 2 1 500px;
+    color: #fff;
+    width: 100%;
 }
 
 .main-title {
@@ -58,6 +64,49 @@ body {
     line-height: 1.2;
     margin-bottom: 1.5em;
     width: 60%;
+}
+
+.main-button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1.5em;
+    align-items: flex-start;
+}
+
+.main-button img {
+    width: 220px;
+}
+
+.main-whatsapp {
+    margin: 0 !important;
+}
+
+.whatsapp-button {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.whatsapp-button a {
+    background: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+    border-radius: 12px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-button a:hover {
+    background: linear-gradient(180deg, #45d33c 0%, #1f7a0f 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* end of main section */
@@ -114,10 +163,6 @@ body {
 .mission-info h3 {
     font-size: 1.5em;
     font-weight: 500;
-}
-
-.mission-info p {
-    text-align: justify;
 }
 
 /* end of mission section */
@@ -454,12 +499,6 @@ details[open] .faq-summary .caret {
         padding: 3em 1.5em;
     }
 
-    .main-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2em;
-    }
-
     .main-title {
         width: 100%;
     }
@@ -507,25 +546,26 @@ details[open] .faq-summary .caret {
         align-items: center;
     }
 
-    .main-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
-    }
-
     .main-title h3 {
-        font-size: 1.6em;
+        font-size: 1.8em;
+        text-align: center;
     }
 
     .main-title p {
         font-size: 1em;
         width: 100%;
+        text-align: center;
     }
 
     .logo {
-        align-self: center;
+        display: block;
+        margin: 0 auto;
     }
-    
+
+    .main-button {
+        align-items: center;
+    }
+
     .mission-items,
     .steps-items {
         grid-template-columns: 1fr;
@@ -576,14 +616,6 @@ details[open] .faq-summary .caret {
 @media (max-width: 480px) {
     .main-container {
         padding: 2em 1em;
-    }
-
-    .main-title h3 {
-        font-size: 1.1em;
-    }
-
-    .main-title p {
-        font-size: 0.9em;
     }
 
     .mission-title h3,
