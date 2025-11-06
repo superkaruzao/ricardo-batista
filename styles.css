@@ -620,6 +620,10 @@ details[open] .faq-summary .caret {
         padding: 2rem 0;
     }
 
+    .about-wrapper {
+        width: 100%;
+    }
+
     .mission-title h3,
     .about-title h3 {
         font-size: 1.5em;
