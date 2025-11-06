@@ -17,7 +17,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("./assets/header-background.jpg");
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/header-background.jpg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 100% 900px;
