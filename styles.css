@@ -408,7 +408,6 @@ summary.faq-summary::-webkit-details-marker {
     height: 8px;
     border-radius: 50%;
     background: #22d3ee;
-    margin-right: 0.5rem;
 }
 
 .faq-summary .caret {
@@ -614,6 +613,10 @@ details[open] .faq-summary .caret {
     .mission-title h3,
     .about-title h3 {
         font-size: 1.5em;
+    }
+
+    .avaliacoes .wrapper {
+        width: 100%;
     }
 
     .mission-item {
