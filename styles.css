@@ -224,6 +224,11 @@ body {
     padding: 4em 1em;
 }
 
+.about-wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
 .about-title h3 {
     color: #000;
     font-size: 2.5em;
@@ -234,9 +239,10 @@ body {
 }
 
 .about-items {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    grid-template-columns: 1fr;
 }
 
 .about-text h3 {
